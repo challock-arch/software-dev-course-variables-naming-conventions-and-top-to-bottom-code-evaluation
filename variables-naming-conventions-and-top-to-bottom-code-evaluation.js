@@ -24,9 +24,15 @@ Things to reflect on:
   
 */
 
-let a = "Alice";
-let b = 5;
-let c = 20;
-let d = a + " bought " + b + " items for $" + c + ".";
+let customerName = "Alice"; //a was too vague for the variable name. 
+let numberOfItems = 5; //b was too vague for the variable name.
+let amountSpent = 20; //c was too vague for the variable name.
+let tripToTheStore = customerName + " bought " + numberOfItems + " items for $" + amountSpent + "."; //with descriptive variable names, its easier to understand what the output will be
 
-console.log(d);
+console.log(tripToTheStore);
+
+let lastTripAmountSpent = 35;
+let amountSpentDiff = lastTripAmountSpent - amountSpent;
+let lastTripToTheStore = "Alice spent $" + lastTripAmountSpent + " last time at the store. Which means she spent $" + amountSpentDiff + " less than the previous trip!";
+
+console.log(lastTripToTheStore);
